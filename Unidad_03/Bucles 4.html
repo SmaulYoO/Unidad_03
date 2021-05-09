@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"/>
+    <script>
+        let fila;
+        let columna = parseInt(prompt("Introduce el tamaño: ", "0"))
+        for (fila = 1; fila <= columna; fila++)
+        
+        {
+            for (espacios = columna - fila; espacios > 0; espacios--)
+            document.write("&nbsp&nbsp");
+            for (conta = 1; conta < (2 * fila); conta++)
+            document.write("*");
+            document.writeln("</br>");
+        }
+    </script>
+</head>
+</html>
+
+<!--La lógica del programa viene a partir de los "for", donde agregando 
+sumas a partir del valor de la columna que el usuario agrega, donde agregamos valores y 
+restamos con los contadores para poder acomodar los números representados 
+por simbolos-->

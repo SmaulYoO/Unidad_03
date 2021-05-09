@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html><head>
+<meta content="text/html; charset=utf-8">
+<script>
+    let dato1, dato2, valor1, valor2, resultado;
+    dato1 = window.prompt ("Primer valor")
+    valor1 = parseInt(dato1);
+    dato2 = window.prompt ("Segundo valor")
+    valor2 = parseInt(dato2);
+    
+    function suma(valor1,valor2) {
+
+        let resultado = valor1 + valor2;
+        document.getElementById("salida").innerHTML = `La suma de los valores  ${valor1} + ${valor2} es ${resultado}`;
+    }
+</script>
+</head>
+<body>
+    <h1>Función con dos parámetros</h1>
+    <p>Operación Suma</p></br>
+    <p id="salida">Aquí el resultado</p>
+    <script>
+        suma(valor2, valor2);
+    </script>
+</body>
+</html>

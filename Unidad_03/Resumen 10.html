@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Conversion</title>
+</head>
+<body>
+<h1>Conversion de grados Celsius a  grados Fahrenheit</h1>
+
+  <form action="#" method="post">
+  <label for="Grados Celsius">Grados Celsius:</label>
+ <input type="text" name="gradoCelsius" id="gradoCelsius"> 
+ <input type="button" name="enviar" id="enviar" value="calcular" onclick="convertir()" />
+ </form>
+
+ 
+ 
+ <script type="text/javascript">
+ 
+ function convertir(){
+	 var celsius = document.getElementById("gradoCelsius").value;
+	 var fahrenheit=((celsius*9)/5)+32;
+	 
+	 if(fahrenheit>=14 && fahrenheit<=32){
+        alert(fahrenheit+" F: Clima Frio");
+     }
+     else if (fahrenheit>=33 && fahrenheit<=68){ 
+        alert(fahrenheit+" F: Temperatura adecuada");
+     }
+     else if(fahrenheit >= 69 && fahrenheit <= 96){
+        alert(fahrenheit+" F: Temperatura Alta");
+     }
+	 else{
+        alert("Temperatura no registrada");
+     }
+
+     
+ }
+
+ 
+ 
+ 
+ </script>
+ 
+ 
+ 
+</body>
+</html> 

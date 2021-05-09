@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Datos en Formularios </title>
+<script>
+    function calculo()
+    {
+    let porcentaje = document.fdatos.entrada.value
+    resultado = porcentaje * 0.10;
+    document.writeln(`Porcentaje del 10% = ${resultado} `)
+    }
+</script>
+</head>
+<body>
+    <form name="fdatos">
+        Agregue una cantidad numérica: <input type="text" size="10" name="entrada"/>
+        <input type="button" value="Aceptar" onclick="calculo()" />
+    </form>
+</body>
+</html>
